@@ -20,6 +20,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+using System;
+using System.Collections.Generic;
+
 namespace BruceMellows.EventuallyCorrect;
 
 public sealed class EventuallyCorrectCache<TKey, TValue>(Func<TKey, TValue> valueFactory, IEqualityComparer<TKey> comparer, Func<TKey, string>? identityFactory = default)
